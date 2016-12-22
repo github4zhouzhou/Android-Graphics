@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.v.demo.shadow.BitmapShadowView_1
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.v.demo.shadow.BlurMaskFilterView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_width="134dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shade_list"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/layer_shape_list"
+        android:text="带阴影的按钮"
+        android:textColor="#ff0000"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/layer_selector_list"
+        android:text="带Selector的按钮"
+        android:textColor="#ff0000"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_layer_list"
+        android:text="Selector为根的按钮"
+        android:textColor="#ff0000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文字的阴影效果"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/layer_shape_list"/>
+
+</LinearLayout>

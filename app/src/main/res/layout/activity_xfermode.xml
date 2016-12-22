@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="3">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/myview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="示例图像"/>
+
+            <Button
+                android:id="@+id/lightbookview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="灯光书架"/>
+
+            <Button
+                android:id="@+id/twitterview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Twitter"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/roundsrcin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="圆角SRCIN"/>
+
+            <Button
+                android:id="@+id/invertsrcin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="倒影图像SRCIN"/>
+
+            <Button
+                android:id="@+id/eraserview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="橡皮擦"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/guaguaview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="刮刮卡"/>
+
+            <Button
+                android:id="@+id/roundsrcatop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="圆角SRCATOP"/>
+
+            <Button
+                android:id="@+id/invertsrcatop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="倒影图像SRCATOP"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <com.v.graphics.xfermode.LightBookView
+        android:id="@+id/lightbookview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.xfermode.TwitterView
+        android:id="@+id/twitterview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.xfermode.RoundImageView_SRCIN
+        android:id="@+id/roundsrcin_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.xfermode.InvertedImageView_SRCIN
+        android:id="@+id/invertsrcin_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.xfermode.EraserView_SRCOUT
+        android:id="@+id/eraserview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.xfermode.GuaGuaCardView_SRCOUT
+        android:id="@+id/guaguaview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.xfermode.RoundImageView_SRCATOP
+        android:id="@+id/roundsrcatop_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.xfermode.InvertedImageView_SRCATOP
+        android:id="@+id/invertsrcatop_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

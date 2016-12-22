@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="3">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/myviewbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="示例图像"/>
+
+            <Button
+                android:id="@+id/rounddstinbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="圆角DSTIN"/>
+
+            <Button
+                android:id="@+id/invertdstinbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="倒影图像DSTIN"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/textwavebtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="文字wave"/>
+
+            <Button
+                android:id="@+id/irregularwavebtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="不规则wave"/>
+
+            <Button
+                android:id="@+id/heartbitbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="心电图"/>
+        </TableRow>
+    </TableLayout>
+
+    <com.v.graphics.porterDuff.PorterDuffView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <com.v.graphics.porterDuff.RoundImageView_DSTIN
+        android:id="@+id/roundimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.porterDuff.InvertedImageView_DSTIN
+        android:id="@+id/invertimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.porterDuff.TextWave_DSTIN
+        android:id="@+id/textwaveview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.porterDuff.IrregularWaveView
+        android:id="@+id/irregularwaveview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.v.graphics.porterDuff.HeartMap
+        android:id="@+id/heartbitview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</LinearLayout>
+

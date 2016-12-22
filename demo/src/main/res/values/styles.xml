@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="BitmapShadowView_2">
+        <attr name="src" format="reference" />
+        <attr name="shadowDx" format="integer" />
+        <attr name="shadowDy" format="integer" />
+        <attr name="shadowColor" format="color"/>
+        <attr name="shadowRadius" format="float"/>
+    </declare-styleable>
+
+</resources>
